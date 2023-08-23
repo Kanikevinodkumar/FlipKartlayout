@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        width: 100vw;
+        background-color: bisque;
+        display: grid;
+        grid-template-rows: 100px 1fr 400px;
+      }
+      .box {
+        background-color: #fff;
+        color: black;
+        border: 2px solid #fff;
+        border-radius: 10px;
+      }
+      .sidebar {
+        background-color: rgb(80, 163, 163);
+        color: black;
+        display: grid;
+        grid-template-rows: 80px 1fr;
+        grid-gap: 30px 0px;
+        height: 60vh;
+      }
+      .Container {
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+      #b {
+        display: flex;
+        justify-content: space-around;
+        background-color: blue;
+      }
+      #b img {
+        width: 7vw;
+        height: 4vh;
+      }
+      #b a {
+        text-decoration: none;
+        color: #fff;
+      }
+      #b span {
+        color: yellow;
+      }
+      #b input {
+        width: 30vw;
+        height: 5vh;
+        margin-top: 10px;
+      }
+      .Footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #212121;
+        color: #fff;
+      }
+      .foot {
+        color: #fff;
+      }
+      .foot a {
+        color: #fff;
+      }
+      .last {
+        display: flex;
+        justify-content: space-around;
+        background-color: #212121;
+        color: #fff;
+      }
+      .last img {
+        width: 30vw;
+      }
+      .first img {
+        width: 50px;
+        height: 20px;
+        display: block;
+      }
+      #c {
+        display: flex;
+        justify-content: space-around;
+      }
+      #d a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding-top: 20px;
+        padding-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+      #d a:hover {
+        color: blue;
+        background-color: #f5faff;
+      }
+      #f {
+        display: flex;
+      }
+      #h {
+        float: right;
+        width: 75%;
+        padding: 10px;
+      }
+      #h a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box navbar">
+      <div id="b">
+        <img
+          src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+          alt=""
+        />
+        <a href="https://www.flipkart.com/plus">Explore <span>Plus</span></a>
+        <img
+          src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+          alt=""
+        />
+        <input type="text" placeholder="Search for products,brands and more" />
+        <h3>My Account</h3>
+        <h3>Become a seller</h3>
+        <h3>More</h3>
+        <h3>Cart</h3>
+      </div>
+    </div>
+    <div id="c">
+      <h4>Electronics</h4>
+      <h4>TV & Appliances</h4>
+      <h4>Men</h4>
+      <h4>Women</h4>
+      <h4>Baby & kids</h4>
+      <h4>Home & Furniture</h4>
+      <h4>Sports,Books & More</h4>
+      <h4>Flights</h4>
+      <h4>Offer Zone</h4>
+    </div>
+    <div class="Container">
+      <div class="box sidebar">
+        <div class="box UserName">
+          <div id="f">
+            <img
+              src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/profile-pic-male_4811a1.svg"
+              alt=""
+            />
+            <h4>hello</h4>
+          </div>
+        </div>
+        <div class="box Myorders">
+          <div id="f">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDE4Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04LjY5NCAtMTEpIj48ZWxsaXBzZSBjeD0iMjAuNTU3IiBjeT0iMjAiIHJ4PSIyMC41NTciIHJ5PSIyMCIvPjxwYXRoIGZpbGw9IiMyODc0RjEiIGQ9Ik05IDExdjE3LjEwOGMwIC40OTMuNDEuODkyLjkxOC44OTJoNC45M3YtNS4yNTdoLTMuMDMzbDQuOTEyLTQuNzcgNC45NzIgNC44M2gtMy4wMzVWMjloMTIuNDE3Yy41MDcgMCAuOTE4LS40LjkxOC0uODkyVjExSDl6Ii8+PC9nPjwvc3ZnPg=="
+              alt=""
+            />
+            <h3>MY ORDERS</h3>
+          </div>
+          <div id="f">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDIyIDIxIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05LjY5NCAtMTApIj48cGF0aCBmaWxsPSIjMjg3NEYwIiBkPSJNMTQuMjc1IDIyLjcwNGMyLjI3Mi0uNDEyIDQuMzQ3LS42MTggNi4yMjUtLjYxOCAxLjg3OCAwIDMuOTUzLjIwNiA2LjIyNS42MThhNS4xNSA1LjE1IDAgMCAxIDQuMjMgNS4wNjhWMzFoLTIwLjkxdi0zLjIyOGE1LjE1IDUuMTUgMCAwIDEgNC4yMy01LjA2OHptMS4yNzQtNy43MjRjMC0yLjU4IDIuMTYzLTQuNjczIDQuODMyLTQuNjczIDIuNjY3IDAgNC44MyAyLjA5MiA0LjgzIDQuNjczIDAgMi41OC0yLjE2MyA0LjY3My00LjgzIDQuNjczLTIuNjcgMC00LjgzMy0yLjA5Mi00LjgzMy00LjY3M3oiLz48ZWxsaXBzZSBjeD0iMjAuNTU3IiBjeT0iMjAiIHJ4PSIyMC41NTciIHJ5PSIyMCIvPjwvZz48L3N2Zz4="
+              alt=""
+            />
+            <h3>ACCOUNT SETTINGS</h3>
+          </div>
+          <div id="d">
+            <a href="https://www.flipkart.com/account">Profile Information</a>
+            <a href="https://www.flipkart.com/account/addresses"
+              >Manage Address</a
+            >
+            <a href="https://www.flipkart.com/account/pancard"
+              >PanCard Information</a
+            >
+          </div>
+          <div id="f">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDIzIDIyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05LjY5NCAtOSkiPjxlbGxpcHNlIGN4PSIyMC41NTciIGN5PSIyMCIgcng9IjIwLjU1NyIgcnk9IjIwIi8+PHBhdGggZD0iTTcgNmgyOHYyOEg3eiIvPjxwYXRoIGZpbGw9IiMyODc0RjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTMxLjUgMjd2MS4xNjdhMi4zNCAyLjM0IDAgMCAxLTIuMzMzIDIuMzMzSDEyLjgzM2EyLjMzMyAyLjMzMyAwIDAgMS0yLjMzMy0yLjMzM1YxMS44MzNBMi4zMzMgMi4zMzMgMCAwIDEgMTIuODMzIDkuNWgxNi4zMzRhMi4zNCAyLjM0IDAgMCAxIDIuMzMzIDIuMzMzVjEzSDIxYTIuMzMzIDIuMzMzIDAgMCAwLTIuMzMzIDIuMzMzdjkuMzM0QTIuMzMzIDIuMzMzIDAgMCAwIDIxIDI3aDEwLjV6TTIxIDI0LjY2N2gxMS42Njd2LTkuMzM0SDIxdjkuMzM0em00LjY2Ny0yLjkxN2MtLjk3IDAtMS43NS0uNzgyLTEuNzUtMS43NXMuNzgtMS43NSAxLjc1LTEuNzVjLjk2OCAwIDEuNzUuNzgyIDEuNzUgMS43NXMtLjc4MiAxLjc1LTEuNzUgMS43NXoiLz48L2c+PC9zdmc+"
+              alt=""
+            />
+            <h3>PAYMENTS</h3>
+          </div>
+          <div id="d">
+            <a href="https://www.flipkart.com/account/giftcard">Gift Cards</a>
+            <a href="https://www.flipkart.com/account/vpadetails">Saved UPI</a>
+            <a href="https://www.flipkart.com/account/carddetails"
+              >Saved Cards</a
+            >
+          </div>
+          <div id="f">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMyIgaGVpZ2h0PSIxOSIgdmlld0JveD0iMCAwIDIzIDE5Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiMyODc0RjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTIwLjUgMi43NWgtOUw5LjI1LjVIMi41QTIuMjQ3IDIuMjQ3IDAgMCAwIC4yNiAyLjc1bC0uMDEgMTMuNUEyLjI1NyAyLjI1NyAwIDAgMCAyLjUgMTguNWgxOGEyLjI1NyAyLjI1NyAwIDAgMCAyLjI1LTIuMjVWNWEyLjI1NyAyLjI1NyAwIDAgMC0yLjI1LTIuMjV6bS01LjYyNSAzLjM3NWEyLjI1NyAyLjI1NyAwIDAgMSAyLjI1IDIuMjUgMi4yNTcgMi4yNTcgMCAwIDEtMi4yNSAyLjI1IDIuMjU3IDIuMjU3IDAgMCAxLTIuMjUtMi4yNSAyLjI1NyAyLjI1NyAwIDAgMSAyLjI1LTIuMjV6bTQuNSA5aC05VjE0YzAtMS40OTYgMy4wMDQtMi4yNSA0LjUtMi4yNXM0LjUuNzU0IDQuNSAyLjI1djEuMTI1eiIvPjxwYXRoIGQ9Ik0tMi00aDI3djI3SC0yeiIvPjwvZz48L3N2Zz4="
+              alt=""
+            />
+            <h3>PAYMENTS</h3>
+          </div>
+          <div id="d">
+            <a href="https://www.flipkart.com/account/rewards">My Coupons</a>
+            <a href="https://www.flipkart.com/account/reviews"
+              >My Reviews & Ratings</a
+            >
+            <a href="https://www.flipkart.com/notifications"
+              >All Notifications</a
+            >
+            <a href="https://www.flipkart.com/wishlist">My Wishlist</a>
+          </div>
+        </div>
+      </div>
+      <div class="box content">
+        <div>
+          <h3>Personal Information</h3>
+          <button>Edit</button>
+          <input type="search" />
+          <input type="search" />
+        </div>
+        <div id="i">
+          <h2>Your Gender</h2>
+          <input type="radio" value="Male" />
+            <label for="Male">Male</label><br />
+          <input type="radio" value="Female" />
+            <label for="Female">Female</label><br />
+        </div>
+        <div>
+          <h3>Email Address</h3>
+          <button>Edit</button>
+          <input type="email" />
+        </div>
+        <div>
+          <h3>Mobile Number</h3>
+          <button>Edit</button>
+          <input type="tel" />
+        </div>
+        <h3>FAQs</h3>
+        <h4>What happens when I update my email address (or mobile number)?</h4>
+        <p>
+          Your login email id (or mobile number) changes, likewise. You'll
+          receive all your account related communication on your updated email
+          address (or mobile number).
+        </p>
+        <h4>
+          When will my Flipkart account be updated with the new email address
+          (or mobile number)?
+        </h4>
+        <p>
+          It happens as soon as you confirm the verification code sent to your
+          email (or mobile) and save the changes.
+        </p>
+        <h4>
+          What happens to my existing Flipkart account when I update my email
+          address (or mobile number)?
+        </h4>
+        <p>
+          Updating your email address (or mobile number) doesn't invalidate your
+          account. Your account remains fully functional. You'll continue seeing
+          your Order history, saved information and personal details.
+        </p>
+        <h4>
+          Does my Seller account get affected when I update my email address?
+        </h4>
+        <p>
+          Flipkart has a 'single sign-on' policy. Any changes will reflect in
+          your Seller account also.
+        </p>
+        <a href="">Deactive Account</a>
+      </div>
+    </div>
+    <div class="box footer">
+      <div class="Footer">
+        <div class="foot">
+          <h4>ABOUT</h4>
+          <a href="#">Contact US</a> <br />
+          <a href="#">About US</a> <br />
+          <a href="#">Carrers</a> <br />
+          <a href="#">Flipkart Store</a> <br />
+          <a href="#">Flipkart Wholesale</a> <br />
+          <a href="#">Coperate Infromation</a> <br />
+        </div>
+        <div class="foot">
+          <h4>HELP</h4>
+          <a href="#">Payment</a> <br />
+          <a href="#">Shipping</a> <br />
+          <a href="#">Cancelation</a> <br />
+          <a href="#">FAQ's</a> <br />
+          <a href="#">Report</a> <br />
+          <a href="#">Return</a> <br />
+        </div>
+        <div class="foot">
+          <h4>Consumer Policy</h4>
+          <a href="#">cancelation</a> <br />
+          <a href="#">Return</a> <br />
+          <a href="#">Terms Of Use</a> <br />
+          <a href="#">Security</a> <br />
+          <a href="#">Privacy</a> <br />
+          <a href="#">SiteMap</a> <br />
+        </div>
+        <div class="foot">
+          <h4>SOCIAL</h4>
+          <a href="#">Facebook</a> <br />
+          <a href="#">Twitter</a> <br />
+          <a href="#">Youtube</a> <br />
+        </div>
+        <div>
+          <h4>Mail Us:</h4>
+          <p>
+            Flipkart internet PVT Ltd, <br />Buildings Alyssa,Begonia
+            <br />&clove embassy tech village <br />Outer Ringroad,Benguluru
+            <br />560103 karnataka <br />
+            india
+          </p>
+        </div>
+        <div>
+          <h4>Registered Office Address</h4>
+          <p>
+            Flipkart internet PVT Ltd, <br />Buildings Alyssa,Begonia
+            <br />&clove embassy tech village <br />Outer Ringroad,Benguluru
+            <br />560103 karnataka <br />
+            india <br />CIN:298234234878432 <br />telephone:040-2334-3248
+          </p>
+        </div>
+      </div>
+      <div class="last">
+        <div class="first">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K"
+            alt=""
+          />
+          <p>Become a seller</p>
+        </div>
+        <div class="first">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
+            alt=""
+          />
+          <p>Advertise</p>
+        </div>
+        <div class="first">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+            alt=""
+          />
+          <p>Giftcard</p>
+        </div>
+        <div class="first">
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="
+            alt=""
+          />
+          <p>Helpcenter</p>
+        </div>
+        <p>2007-2023 flipkart.com</p>
+        <img
+          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

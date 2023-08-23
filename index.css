@@ -1,0 +1,134 @@
+.Hard {
+  background-color: #f5f5f5;
+}
+.vinod {
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  text-align: center;
+  font-weight: 500;
+}
+img {
+  width: 100px;
+}
+.pavan {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+.btn {
+  background-color: blue;
+  color: #fff;
+  width: 70px;
+  height: 30px;
+}
+.word {
+  padding: 50px 0px;
+}
+.naveen {
+  background-color: #2874f0;
+  display: flex;
+}
+.rehan img {
+  width: 90px;
+  display: block;
+}
+.Anand:hover {
+  color: blue;
+}
+.rehan a span {
+  color: yellow;
+}
+.ganesh {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin: auto;
+  width: 60vw;
+}
+.rehan a {
+  color: #fff;
+  text-decoration: none;
+}
+.vi {
+  width: 25vw;
+  height: 5vh;
+}
+.pro button {
+  width: 10vw;
+  height: 5vh;
+  color: #2874f0;
+}
+.boot {
+  color: #fff;
+  font-weight: 600;
+}
+.Boss {
+  display: flex;
+  justify-content: space-around;
+}
+.Happy {
+  display: flex;
+  justify-content: space-around;
+}
+.Karthik {
+  width: 150px;
+}
+.Adv {
+  width: 1330px;
+  height: 200px;
+}
+.Ammerpet img {
+  width: 32vw;
+}
+.QT p {
+  /* font-style: normal; */
+  text-align: left;
+  padding: 10px;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: #454343;
+}
+.Footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #212121;
+  color: #fff;
+}
+.foot {
+  color: #fff;
+}
+.foot a {
+  color: #fff;
+}
+.last {
+  display: flex;
+  justify-content: space-around;
+  background-color: #212121;
+  color: #fff;
+}
+.last img {
+  width: 30vw;
+}
+.first img {
+  width: 50px;
+  height: 20px;
+  display: block;
+}
+.watch {
+  padding: 30px;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: #454343;
+}
+.ring p {
+  text-align: left;
+  padding: 10px;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: #454343;
+}
